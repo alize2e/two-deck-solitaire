@@ -1,0 +1,93 @@
+<!-- Check html and css again with validator -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title> Two-Deck Solitaire </title>
+	<script src="script.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="hide">
+	<!-- make a different page for rules? -->
+	<div id="space">
+		<div id="rules">
+			<h1> Solitaire </h1>
+
+			Hello! Welcome to this two-deck game of solitaire. Similar to Klondike solitaire, this one instead uses two decks of cards,
+			and has slightly different rules. I learned this solitaire from friends, and may have inadvertently changed the rules over the 
+			years, so I don't know its name nor if it exactly corresponds to a formal solitaire. A big thank-you to those friends, and to 
+			all my beta testers!
+		
+			<h2>Rules</h2>
+		
+			<h3>Goal</h3>
+			<ul><li>Stack all the cards by suit in ascending order in the top 8 columns.</li></ul>
+
+			<h3>Quick Start</h3>
+			<ul>
+				<li>
+					If you see an ace, move it to one of the top piles. Start placing smaller cards on larger ones of the opposite
+					color, or a sub-stack of cards on a larger card of the opposite color. When you can no longer stack, press 'd',
+					and repeat until you hopefully win. For more details, including on how to move cards, read on; or start playing 
+					now – you won't be able to move any cards where you aren't allowed to.
+				</li>
+			</ul>
+		
+			<h3>Sorting</h3>
+			<ul>
+				<li>
+					Top middle pile: <br> You cannot stack cards here. The visible card is always accessible. <br><br>
+				</li>
+				<li>
+					Other top stacks:<br>  In the 8 other top stacks, cards are stacked by suit in ascending order (the ace is the smallest card). 
+					All of the top stacks are always entirely sorted, and the topmost card in each stack is accessible. <br><br>
+				</li>
+				<li>
+					Bottom columns: <br> In contrast, in the bottom 10 columns, for cards to be sorted, they must be ordered in descending 
+					order with alternating colors (i.e. you can only stack a red card on a black one and vice versa). Furthermore, neither 
+					the visible nor hidden parts of columns are necessarily completely sorted. <br> A card is considered to be accessible
+					if its face is visible and the column is sorted, at least between that card and the bottom.
+				</li>
+			</ul>
+		
+			<h3>Play</h3>
+			<ul>
+				<li>
+					Moving cards: <br> Click on a card to select it, and then hover over the card you want to place it on to put the card down.
+					To deselect a card, move the mouse off of the card and then hover over it without clicking. (If you have trouble 
+					moving a card, make sure you aren't accidentally deselecting it.) <br><br>
+				</li>
+				<li>
+					Placing on a bottom column: <br> You can place any accessible card – plus the cards stacked on it – on a bottom column if:
+					the column is empty; or the value of the card in question is one lower than that of the topmost card and those two cards have 
+					different colors. <br><br>
+				</li>
+				<li>
+					Stacking on a top stack: <br> You can stack an accessible card that does not have cards placed on top of it if the stack in question
+					would remain sorted. <br><br>
+				</li>
+				<li>
+					Moving a card from the middle pile: <br> You can only remove cards from the top middle pile by stacking on a top 
+					stack, and said stack must remain sorted. <br><br>
+				</li>
+				<li>
+					Dealing cards: <br> Click 'd', and a card will be added, face-up, to each bottom column that does not have a 
+					king at the top. When there are no cards left to be added, the background will turn green. If all the cards have
+					been dealt (the screen will turn orange) and you cannot win: reload to try again, if you have the Patience.<br><br>
+				</li>
+				<li>
+					Rules: <br> Click 'r' to toggle between seeing and hiding the rules. Don't worry too much about the rules,
+					because you won't be able to move any cards where you aren't allowed to. Good luck!
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+
+
+</html>
